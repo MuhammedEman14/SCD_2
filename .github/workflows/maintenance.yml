@@ -3,7 +3,9 @@ name: Scheduled Tasks
 on:
   schedule:
     - cron: '0 0 * * *' # Run every day at midnight (UTC time)
-
+  push:
+    branches:
+      - main
 jobs:
   maintenance:
     runs-on: ubuntu-latest
