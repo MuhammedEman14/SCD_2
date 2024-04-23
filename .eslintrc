@@ -1,11 +1,12 @@
 module.exports = {
     
-    "rules": {
-      "indent": ["error", 2], // enforce 2 space indentation
-      "quotes": ["error", "single"], // enforce single quotes
-      "semi": ["error", "always"], // enforce semicolons at the end of statements
-      "no-unused-vars": "warn", // warn about unused variables
-      // Add more custom rules here
-    }
+  "rules": {
+    "indent": ["error", 2], // enforce 2 space indentation
+    "quotes": ["error", "single"], // enforce single quotes
+    "semi": ["error", "always"], // enforce semicolons at the end of statements
+    "no-unused-vars": "warn", // warn about unused variables
+    // Add more custom rules here
+  }
+
   };
   
