@@ -23,4 +23,4 @@ jobs:
       run: npm install eslint --save-dev
       
     - name: Lint code
-      run: eslint .
+      run: npx eslint .
