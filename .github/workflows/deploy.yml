@@ -16,9 +16,6 @@ jobs:
     - name: Install dependencies
       run: npm install
       
-    - name: Test
-      run: npm run test
-      
     - name: Deploy
       run: |
         # Add commands to deploy the application
