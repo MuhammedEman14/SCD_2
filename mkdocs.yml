@@ -2,4 +2,4 @@ site_name: My Documentation
 nav:
   - Home: README.md
   # Add additional pages as needed
-docs_dir: .
+theme: mkdocs
