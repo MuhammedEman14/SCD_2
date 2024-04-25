@@ -3,5 +3,3 @@ nav:
   - Home: index.md
   - About: about.md
   # Add additional pages as needed
-theme:
-  name: material
