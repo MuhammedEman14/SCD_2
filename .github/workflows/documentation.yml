@@ -1,0 +1,34 @@
+name: Documentation Deployment
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy_documentation:
+    name: Deploy Documentation
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        
+      # Add steps to build documentation from source files
+      - name: Build documentation
+        run: |
+          pip install mkdocs
+          mkdocs build
+          echo "Building documentation..."
+          
+      # Add steps to deploy documentation to hosting platform (e.g., GitHub Pages)
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@4.2.0
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: ./docs # Specify the folder containing built documentation
+
