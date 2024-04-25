@@ -2,5 +2,3 @@ site_name: My Documentation
 nav:
   - Home: README.md
   # Add additional pages as needed
-theme: mkdocs
-docs_dir: .   # Specify the root directory as the location of documentation files
