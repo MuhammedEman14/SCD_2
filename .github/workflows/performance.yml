@@ -13,10 +13,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       
-    - name: Install dependencies
-      run: npm install
-
-    - name: Measure linting performance
+    - name: Measure maintenance task performance
       run: |
-        time npx eslint . --config .eslintrc
-
+        time python maintenance_script.py
