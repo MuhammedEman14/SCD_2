@@ -8,16 +8,15 @@ on:
 jobs:
   analyze_performance:
     runs-on: ubuntu-latest
-
+    
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
+      
+    - name: Install dependencies
+      run: npm install
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '14'
+    - name: Measure linting performance
+      run: |
+        time npx eslint . --config .eslintrc
 
-      - name: Measure performance metrics
-        run: |
-          npm run analyze-performance
