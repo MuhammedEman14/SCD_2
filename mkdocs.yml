@@ -3,3 +3,4 @@ nav:
   - Home: README.md
   # Add additional pages as needed
 theme: mkdocs
+docs_dir: docs   # Specify an existing, but empty, directory
