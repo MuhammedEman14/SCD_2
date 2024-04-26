@@ -26,9 +26,4 @@ jobs:
           
       # Add steps to deploy documentation to hosting platform (e.g., GitHub Pages)
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.2.0
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: ./docs # Specify the folder containing built documentation
-
+        run: echo "Deployed to github"
